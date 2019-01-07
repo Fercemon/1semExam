@@ -1,0 +1,1409 @@
+/* fonts for website*/
+@import url('https://fonts.googleapis.com/css?family=Original+Surfer');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+/*////////////////////mobile version///////////////*/
+
+/*///////////////general settings////////////*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #E1C5A5;
+
+}
+
+p{
+    color: #9E9E9E;
+    margin: 1em 0;
+}
+
+a{
+    color: #9E9E9E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #000;
+}
+
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: #553B2E;
+    margin-bottom: 1em;
+    font-family: 'Original Surfer', cursive;
+}
+
+h2{
+    color: #975733;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+svg{
+    cursor: pointer;
+}
+
+
+.wrapper{
+    overflow: hidden;
+}
+
+
+
+
+/*////////////////////header/////////////////*/
+header{
+    position: relative;
+    padding: 2em 2em 1em 2em;
+    height: 15vh;
+    z-index: 5;
+}
+
+.destock-nav{
+    display: none;
+}
+
+.logo{
+    position: relative;
+    margin: 0;
+    height: 7vh;
+    text-align: left;
+}
+
+.nav-container{
+    float: right;
+    margin: 0.7em 0;
+
+}
+
+#menu{
+    height: 0.8em;
+    float: left;
+    margin: 0.2em 1em;
+}
+
+.cls-1{
+    fill: none;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+
+.language{
+    float: left;
+}
+
+
+/*//////////////navigation bar for mobile/////*/
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: rgb(187, 134, 73, 0.98);
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+}
+
+.close{
+    position: absolute;
+    top 0;
+    right: 1em;
+    font-size: 2em;
+    font-weight: 700;
+    color: #975733;
+    margin-top: 1em;
+}
+
+.close:hover{
+    color: #553B2E;
+}
+
+.main-nav{
+    position: relative;
+    top: 25%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.items-container{
+    margin: 2em 0;
+}
+
+
+.nav-items{
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #975733;
+}
+
+.nav-items:hover{
+    color: #553B2E;
+}
+
+/*//////////////media icons inside overlay for mobiles navigation/////////*/
+
+.footer-mobile{
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer-mobile a{
+    color: #975733;
+    margin-left: 2em;
+    font-size: 1em;
+}
+
+.footer-mobile a:hover{
+    color: #553B2E;
+}
+
+#f{
+   margin-left: 0;
+}
+
+/*//////////////////////footer///////////////////////////*/
+
+.footer-desktop{
+    display: none;
+}
+
+
+
+/*//////////////Home main section///////////*/
+
+.home-main{
+    position: relative;
+    height: 85vh;
+}
+
+/*//////////////////////puzzle with picture/////////*/
+
+
+
+.background{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "background1 background2"
+        "background3 background4";
+    position: relative;
+    width: 70%;
+    height: 40vh;
+    z-index: -1;
+    grid-gap: 0.1em;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.background1{
+    grid-area: background1;
+    width: 100%;
+    height:  20vh;
+    animation: move1 2s both;
+}
+
+@keyframes move1{
+    0%{
+        transform: translateX(-200%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.background2{
+    grid-area: background2;
+    width: 100%;
+    height:  20vh;
+    animation: move2 2s  both;
+}
+
+@keyframes move2{
+    0%{
+        transform: translateX(200%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.background3{
+    grid-area: background3;
+    width: 100%;
+    height:  20vh;
+    animation: move3 2s 0.5s both;
+}
+
+@keyframes move3{
+    0%{
+        transform: translateX(-200%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.background4{
+    grid-area: background4;
+    width: 100%;
+    height:  20vh;
+    animation: move4 2s 0.5s both;
+}
+
+@keyframes move4{
+    0%{
+        transform: translateX(200%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*/////////////////////home main//////////////////*/
+
+.designer-wrapp{
+    display: none;
+}
+
+/*//////////////triangle SVG///////////////*/
+
+.triangle-wrapp{
+    position: relative;
+    height: 45vh;
+    background-color: #E9E9E9;
+    padding-top: 2vh;
+    z-index: -1;
+}
+
+.triangle{
+    display: block;
+    height: 27vh;
+    margin: auto;
+}
+
+.cls-2{
+    fill: none;
+    stroke: #975733;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: draw 1s 1s forwards;
+}
+
+
+@keyframes draw{
+    to{
+    stroke-dashoffset: 0;
+        }
+}
+
+/*////////////quotes styles/////////*/
+.quotes{
+    position: absolute;
+    width: 90%;
+    top: 5em;
+    left: 2em;
+}
+
+.h1-quote{
+    font-size: 5vw;
+    text-align: left;
+    color: #9E9E9E;
+    margin-bottom: 1em;
+    padding-left: 3em;
+    animation: fadeIn 2s 1.5s both;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+h3{
+    font-size: 4vw;
+    color: #9E9E9E;
+    animation: fadeIn 2s 1.5s both;
+}
+
+.h3-quote{
+    text-align: left;
+    padding-left: 3.5em;
+}
+
+
+
+.special-font{
+    font-size: 1.3em;
+    color: #000;
+    font-family: 'Marck Script', cursive;
+
+}
+
+/*//////////////////btn to go check my work////////*/
+.job-btn{
+    font-family: 'Marck Script', cursive;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+    animation: jobBtn 2s 2s both;
+    padding-top: 2em;
+}
+/*
+@keyframes jobBtn{
+    from{
+        height: 0;
+        overflow-y: hidden;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+*/
+
+/*///////////////////////////about page///////////////////////////*/
+.about-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+}
+
+/*
+.moveMain{
+    animation: moveMain 2s both;
+}
+
+@keyframes moveMain{
+    to{
+        transform: translateY(-100%);
+    }
+}
+*/
+
+
+.slide{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+
+}
+
+/*/////////////this is the class we add to the last page so it become display none*/
+.not-visible{
+    display: none;
+}
+
+
+.section{
+    padding: 0 2em;
+    height: 35vh;
+    width: 100%;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    animation: show 2s both;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.profile-pic{
+    display: block;
+    width: auto;
+    height: 75%;
+    margin:0 auto;
+    border-radius: 50%;
+}
+
+.about-pic{
+   width: 100%;
+    height: 75%;
+    object-fit: cover;
+
+}
+
+.content{
+    background-color: #E9E9E9;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    padding: 2em 2em 0 2em;
+    animation: translate 2s 0.5s both;
+}
+
+
+@keyframes translate{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+/*////////////down arrow animation for scrolling////////*/
+
+
+.arrow-down {
+    content: ' ';
+    position: absolute;
+    bottom: 4em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/*//////////////////with this I create the arrowhead/////*/
+.arrow-down:after {
+    content: '';
+    display: block;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    border-top: 1.5px solid #b91a2f;
+    border-right: 1.5px solid #b91a2f;
+    margin-top: -10px;
+    transform: rotate(135deg);
+}
+
+/*//////////////////////with this we creat the body of the arrow/////////*/
+.arrow-down::before {
+    content: '';
+    display: block;
+    width: 1.5px;
+    height: 50px;
+    margin-left: 4px;
+    background: #b91a2f;
+    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+.arrow-up{
+    transform: rotate(180deg);
+    bottom: 1em;
+    left: auto;
+    right: 50%;
+}
+
+/* this is the animation for the body of the arrow
+
+with the transforme scale I means to go from height 0 to height 100% and vice versa
+
+with the transform origin I setting the origin of the animation on the top so the arrow grow to the bottom and on 50% i change the origin to the bottom so the arrow shrink to the bottom/*/
+
+@keyframes elasticus {
+    0% {
+        transform-origin: 0% 0%;
+        transform: scale(1, 0);
+    }
+    50% {
+        transform-origin: 0% 0%;
+        transform: scale(1, 1);
+    }
+    50.1% {
+        transform-origin: 0% 100%;
+        transform: scale(1, 1);
+    }
+    100% {
+        transform-origin: 0% 100%;
+        transform: scale(1, 0);
+    }
+}
+
+
+
+/*////////////////////////////portfolio page//////////////////////////////*/
+
+/*///////////////////////////circle menu style////////////////////////////*/
+
+.body{
+    background: #E9E9E9;
+}
+
+.portfolio-main{
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-sections{
+    height: 0;
+    width: 100%;
+    text-align: center;
+    overflow-y: hidden;
+    z-index: -1;
+}
+
+
+#circle-wrapper{
+    visibility: hidden;
+}
+
+
+.circle-menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+
+}
+.menu {
+      width: 50px;
+      height: 50px;
+      background: #E1C5A5;
+      border-radius: 50%;
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    cursor:pointer;
+    }
+
+.portfolio-h2{
+    padding-top: 10%;
+}
+
+.project-wrapp{
+    padding-bottom: 1em;
+    border-bottom: 1px solid #9E9E9E;
+    text-align: left;
+}
+
+.project-h3{
+    padding-top: 1em;
+    padding-left: 10%;
+}
+
+.portfolio-container{
+    width: 80%;
+    height: 10em;
+    margin: 0.5em auto;
+    padding: 0 2em;
+}
+
+.end{
+    border: none;
+}
+
+
+
+
+/* webs section */
+.responsive{
+    background-image: url(../img/medium/responsive-website.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.micro{
+    background-image: url(../img/medium/microwebsite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.prototype{
+    background-image: url(../img/medium/web-prototype.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*UI*/
+
+.basic-prototype{
+    background-image: url(../img/medium/microwebsite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.story{
+    background-image: url(../img/medium/story-words.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.storyboard{
+    background-image: url(../img/medium/story-words.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.simple-animation{
+    background-image: url(../img/medium/simple-animation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fly{
+    background-image: url(../img/medium/fly.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bubbles{
+    background-image: url(../img/medium/bubbles.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.interactive{
+    background-image: url(../img/medium/interactive.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.screen-cast{
+    background-image: url(../img/medium/screen-cast.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nativ{
+    background-image: url(../img/medium/native-app.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+/*animation to move the circle btn to the top*/
+.top{
+    animation: top 2s both;
+}
+
+@keyframes top{
+    from{
+        top: 50%;
+    }
+    to{
+        top: 6em;
+    }
+}
+
+
+/*animation to move the circle btn to the center*/
+.center{
+    animation: center 2s both;
+}
+
+@keyframes center{
+    from{
+        top: 10%;
+    }
+    to{
+        top: 50%;
+    }
+}
+
+
+
+.menu:hover{
+    background: #553B2E;
+}
+
+.fa-bars{
+    position: absolute;
+    color: #975733;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.block{
+    animation: block 1s both;
+}
+
+@keyframes block{
+
+    to{
+        visibility: visible;
+    }
+}
+
+.move{
+    animation: move 2s forwards;
+}
+
+.js{
+    animation: js 1s 1s forwards;
+}
+
+
+.html{
+    animation: html 1s 1s forwards;
+}
+
+.github{
+    animation: github 1s 1s forwards;
+}
+
+
+
+
+.quarter {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+    top: 0;
+    right: 0;
+    transform-origin: bottom left;
+  background-color: #bb8649;
+  border-radius: 0 100% 0 0;
+}
+.quarter:hover {
+  background-color: #553B2E;
+}
+
+@keyframes move {
+   from{
+        height: 0;
+        overflow-y: hidden;
+    }
+
+    to{
+        height: 100%;
+        overflow-y: visible;
+
+    }
+}
+
+@keyframes moveB {
+    to{
+        position: absolute;
+        top: 300px;
+        left: -1px;
+    }
+}
+
+@keyframes js{
+    to{
+        transform: rotate(270deg);
+    }
+
+}
+
+@keyframes html{
+    to{
+        transform: rotate(180deg);
+    }
+
+}
+
+@keyframes github{
+    to{
+        transform: rotate(90deg);
+    }
+
+}
+
+.fa-laptop{
+    color: #975733;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: rotate(-270deg);
+}
+
+.fa-laugh-beam{
+    color: #975733;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: rotate(-90deg);
+}
+
+.ui{
+    color: #975733;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+}
+
+
+
+.fa-film{
+    color: #975733;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: rotate(-90deg);
+}
+
+
+
+.ux{
+    color: #975733;
+    font-size: 2em;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    transform: rotate(-180deg);
+}
+
+
+
+/*/////////////////////////ipad version///////////////////////*/
+
+
+
+@media all and (min-width: 768px){
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 2.2em;
+    }
+    /*////////////////home page//////////*/
+
+    .nav-items{
+        font-size: 2.5em;
+    }
+
+    .triangle{
+        height: 30vh;
+    }
+
+    .quotes{
+        top: 8em;
+        left: 9em;
+    }
+
+    .h1-quote{
+        font-size: 4vw;
+    }
+
+    h3{
+        font-size: 3vw;
+    }
+
+    .job-btn{
+        font-size: 2em;
+        padding-top: 1em;
+    }
+
+
+
+/*////////////////////////////about page///////////////////////////*/
+
+    .content{
+        padding: 2em 4em 0 4em;
+    }
+    p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+
+/*///////////////////////////portfolio page//////////////////*/
+
+    .portfolio-container{
+        height: 20em;
+    }
+
+    .portfolio-h3{
+        font-size: 2em;
+    }
+}
+
+
+
+/*/////////////////////////////////desktop version//////////////////////*/
+
+@media all and (min-width: 1024px){
+
+
+/*////////////////////header/////////////////*/
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 17vh;
+    top: 0;
+    left: 0;
+    padding: 3em 3em 1em 3em;
+}
+
+    .main-header{
+        position: relative;
+    }
+
+.logo{
+    height: 9vh;
+}
+
+    .overlay{
+        display: none;
+    }
+
+
+
+.destock-nav{
+    display: block;
+    position: absolute;
+    top: 3.8em;
+    right: 0;
+    width: auto;
+    overflow-x: hidden;
+    transition: all 1s;
+    opacity: 0;
+    padding-right: 10em;
+    z-index: -1;
+}
+
+
+.item-container{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em 0 1em;
+}
+
+    .item-container a{
+        color: #9E9E9E;
+    }
+
+    .item-container a:hover{
+        color: #975733;
+    }
+
+
+.item-container:hover::after{
+    display: block;
+    content: "";
+    margin: auto;
+    height: 0;
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #975733;
+}
+
+
+#menu{
+    margin: 1em 2em 1em 1em;
+    height: 1em;
+}
+
+.language{
+    margin: 0.8em 0;
+    height: 1em;
+    font-size: 1.2em;
+}
+
+/*/////////////////////home main//////////////////*/
+
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "background triangle-wrapp";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.designer-wrapp{
+    position: fixed;
+    bottom: 25em;
+    left: -6em;
+    display: block;
+    transform: rotate(-90deg);
+}
+
+    .designer-wrapp p{
+        color: #888787;
+    }
+
+/*//////////////////////puzzle with picture/////////*/
+
+
+.background{
+    padding-top: 17vh;
+    height: 100%;
+    width: 100%;
+}
+
+.background1{
+    width: 100%;
+    height: 100%;
+    animation: move1 3s both;
+}
+
+@keyframes move1{
+    0%{
+        transform: translateY(-150%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.background2{
+    width: 100%;
+    height: 100%;
+    animation: move2 3s 0.5s both;
+}
+
+@keyframes move2{
+    0%{
+        transform: translateY(-150%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.background3{
+    width: 100%;
+    height: 100%;
+    animation: move3 3s both;
+}
+
+@keyframes move3{
+    0%{
+        transform: translateY(150%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.background4{
+    width: 100%;
+    height: 100%;
+    animation: move4 3s 0.5s both;
+}
+
+@keyframes move4{
+    0%{
+        transform: translateY(150%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+/*//////////////triangle SVG///////////////*/
+
+.triangle-wrapp{
+    grid-area: triangle-wrapp;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    padding-top: 17vh;
+}
+
+.triangle{
+    position: relative;
+    height: 22em;
+    width: auto;
+}
+
+/*////////////quotes styles/////////*/
+.quotes{
+    position: absolute;
+    top: 6em;
+    left: 5em;
+    padding-top: 17vh;
+}
+
+.h1-quote{
+    font-size: 2em;
+    text-align: left;
+    color: #9E9E9E;
+    margin-bottom: 1em;
+}
+
+h3{
+    font-size: 1.5em;
+    color: #9E9E9E;
+}
+
+
+
+
+
+.special-font{
+    font-size: 1.5em;
+    color: #000;
+    font-family: 'Marck Script', cursive;
+}
+
+/*//////////////////btn to go check my work////////*/
+.job-btn{
+    margin-top: 2em;
+    font-family: 'Marck Script', cursive;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+/*//////////////////////footer///////////////////////////*/
+
+.footer-desktop{
+    display: block;
+    position: fixed;
+    bottom: 4em;
+    right: 6em;
+    z-index: 3;
+}
+
+
+.footer-icons{
+    color: #9E9E9E;
+    margin-left: 2em;
+    font-size: 1.5em;
+}
+
+
+/*/////////////////////////////about page////////////*/
+    .about-main{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .slide{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "section content";
+        height: 100vh;
+        padding: 0;
+
+    }
+
+    .section{
+        grid-area: section;
+        height: 100vh;
+        width: 100%;
+        padding: 17vh;
+    }
+
+    .profile-pic{
+        width: 90%;
+    }
+
+    .content{
+        grid-area: content;
+         height: 100vh;
+        width: 100%;
+        padding: 17vh;
+    }
+
+    @keyframes translate{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+    .arrow-down{
+        left: 50.35%;
+    }
+
+    .arrow-up{
+    transform: rotate(180deg);
+    bottom: 4em;
+    left: auto;
+    right: 49.7%;
+}
+
+    .not-visible{
+        display: none
+    }
+
+
+
+/*/////////////////////////portfolio page////////////////*/
+    .project-wrapp{
+        border: none;
+    }
+
+    .portfolio-container{
+        height: 12em;
+    }
+    .portfolio-section1{
+         display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        "portfolio-h2 portfolio-h2 portfolio-h2"
+        "wrapp1 wrapp2 wrapp3";
+        padding: 0 4em;
+    }
+
+
+    .portfolio-h2 {
+        grid-area:  portfolio-h2;
+        padding-top: 2em;
+    }
+
+    .wrapp1{
+        grid-area: wrapp1;
+    }
+
+    .wrapp2{
+        grid-area: wrapp2;
+    }
+
+    .wrapp3{
+        grid-area: wrapp3;
+    }
+
+
+
+
+    .portfolio-section2{
+         display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        "portfolio-h2 portfolio-h2 portfolio-h2"
+        "wrapp1 wrapp2 wrapp3";
+        padding: 0 4em;
+    }
+
+
+
+    .portfolio-section3{
+         display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+        "portfolio-h2 portfolio-h2 portfolio-h2 portfolio-h2"
+        ". wrapp1 wrapp2 .";
+        padding: 0 4em;
+    }
+
+   .portfolio-section4{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    grid-template-areas:
+        "portfolio-h2 portfolio-h2 portfolio-h2"
+        "last1 last2 last3"
+        "last4 last5 .";
+        padding: 0 4em;
+    }
+
+
+    .last1{
+        grid-area: last1;
+    }
+
+    .last2{
+        grid-area: last2;
+    }
+
+    .last3{
+        grid-area: last3;
+    }
+
+    .last4{
+        grid-area: last4;
+    }
+
+    .last5{
+        grid-area: last5;
+    }
+
+
+
+
+}

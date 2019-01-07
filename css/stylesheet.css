@@ -379,7 +379,21 @@ h3{
     animation: jobBtn 2s 2s both;
     padding-top: 2em;
 }
-/*
+
+#job-btn a:hover{
+    color: #975733;
+}
+
+.fa-chevron-right{
+    font-size: 0.6em;
+    color: #9E9E9E;
+}
+
+.fa-chevron-right:hover{
+
+    color: #975733;
+}
+
 @keyframes jobBtn{
     from{
         height: 0;
@@ -390,7 +404,7 @@ h3{
         height: 100%;
     }
 }
-*/
+
 
 /*///////////////////////////about page///////////////////////////*/
 .about-main{
@@ -1087,6 +1101,7 @@ header{
 }
 
 .designer-wrapp{
+    font-size: 0.8em;
     position: fixed;
     bottom: 25em;
     left: -6em;
@@ -1311,6 +1326,7 @@ h3{
 
 
 /*/////////////////////////portfolio page////////////////*/
+
     .project-wrapp{
         border: none;
     }
@@ -1385,22 +1401,27 @@ h3{
 
     .last1{
         grid-area: last1;
+        padding: 4em 0;
     }
 
     .last2{
         grid-area: last2;
+        padding: 4em 0;
     }
 
     .last3{
         grid-area: last3;
+        padding: 4em 0;
     }
 
     .last4{
         grid-area: last4;
+        padding: 4em 0;
     }
 
     .last5{
         grid-area: last5;
+        padding: 4em 0;
     }
 
 

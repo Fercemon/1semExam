@@ -5,34 +5,34 @@
 /*////////////////////mobile version///////////////*/
 
 /*///////////////general settings////////////*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:  #E1C5A5;
+body {
+    background-color: #E1C5A5;
 
 }
 
-p{
+p {
     color: #9E9E9E;
     margin: 1em 0;
 }
 
-a{
+a {
     color: #9E9E9E;
     text-decoration: none;
     cursor: pointer;
 }
 
-a:hover{
+a:hover {
     color: #000;
 }
 
 
-h1{
+h1 {
     font-size: 1.5em;
     text-align: center;
     color: #553B2E;
@@ -40,18 +40,18 @@ h1{
     font-family: 'Original Surfer', cursive;
 }
 
-h2{
+h2 {
     color: #975733;
     font-size: 1.7em;
     cursor: pointer;
 }
 
-svg{
+svg {
     cursor: pointer;
 }
 
 
-.wrapper{
+.wrapper {
     overflow: hidden;
 }
 
@@ -59,37 +59,37 @@ svg{
 
 
 /*////////////////////header/////////////////*/
-header{
+header {
     position: relative;
     padding: 2em 2em 1em 2em;
     height: 15vh;
     z-index: 5;
 }
 
-.destock-nav{
+.destock-nav {
     display: none;
 }
 
-.logo{
+.logo {
     position: relative;
     margin: 0;
     height: 7vh;
     text-align: left;
 }
 
-.nav-container{
+.nav-container {
     float: right;
     margin: 0.7em 0;
 
 }
 
-#menu{
+#menu {
     height: 0.8em;
     float: left;
     margin: 0.2em 1em;
 }
 
-.cls-1{
+.cls-1 {
     fill: none;
     stroke: #000;
     stroke-linecap: round;
@@ -97,13 +97,13 @@ header{
     stroke-width: 3px;
 }
 
-.language{
+.language {
     float: left;
 }
 
 
 /*//////////////navigation bar for mobile/////*/
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -111,15 +111,15 @@ header{
     width: 0;
     overflow-x: hidden;
     transition: 0.5s;
-    background-color: rgb(187, 134, 73, 0.98);
+    background-color: rgb(187, 134, 73);
     text-align: center;
     margin: 0;
     z-index: 2;
 }
 
-.close{
+.close {
     position: absolute;
-    top 0;
+    top: 0;
     right: 1em;
     font-size: 2em;
     font-weight: 700;
@@ -127,11 +127,11 @@ header{
     margin-top: 1em;
 }
 
-.close:hover{
+.close:hover {
     color: #553B2E;
 }
 
-.main-nav{
+.main-nav {
     position: relative;
     top: 25%;
     left: 0;
@@ -140,24 +140,24 @@ header{
     margin: 2em 0;
 }
 
-.items-container{
+.items-container {
     margin: 2em 0;
 }
 
 
-.nav-items{
+.nav-items {
     font-size: 1.7em;
     font-weight: 700;
     color: #975733;
 }
 
-.nav-items:hover{
+.nav-items:hover {
     color: #553B2E;
 }
 
 /*//////////////media icons inside overlay for mobiles navigation/////////*/
 
-.footer-mobile{
+.footer-mobile {
     position: absolute;
     bottom: 2em;
     left: 0;
@@ -166,23 +166,23 @@ header{
 }
 
 
-.footer-mobile a{
+.footer-mobile a {
     color: #975733;
     margin-left: 2em;
     font-size: 1em;
 }
 
-.footer-mobile a:hover{
+.footer-mobile a:hover {
     color: #553B2E;
 }
 
-#f{
-   margin-left: 0;
+#f {
+    margin-left: 0;
 }
 
 /*//////////////////////footer///////////////////////////*/
 
-.footer-desktop{
+.footer-desktop {
     display: none;
 }
 
@@ -190,7 +190,7 @@ header{
 
 /*//////////////Home main section///////////*/
 
-.home-main{
+.home-main {
     position: relative;
     height: 85vh;
 }
@@ -199,7 +199,7 @@ header{
 
 
 
-.background{
+.background {
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -216,83 +216,83 @@ header{
     margin: 0 auto;
 }
 
-.background1{
+.background1 {
     grid-area: background1;
     width: 100%;
-    height:  20vh;
+    height: 20vh;
     animation: move1 2s both;
 }
 
-@keyframes move1{
-    0%{
+@keyframes move1 {
+    0% {
         transform: translateX(-200%);
     }
 
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
 
-.background2{
+.background2 {
     grid-area: background2;
     width: 100%;
-    height:  20vh;
-    animation: move2 2s  both;
+    height: 20vh;
+    animation: move2 2s both;
 }
 
-@keyframes move2{
-    0%{
+@keyframes move2 {
+    0% {
         transform: translateX(200%);
     }
 
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
 
-.background3{
+.background3 {
     grid-area: background3;
     width: 100%;
-    height:  20vh;
+    height: 20vh;
     animation: move3 2s 0.5s both;
 }
 
-@keyframes move3{
-    0%{
+@keyframes move3 {
+    0% {
         transform: translateX(-200%);
     }
 
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
 
-.background4{
+.background4 {
     grid-area: background4;
     width: 100%;
-    height:  20vh;
+    height: 20vh;
     animation: move4 2s 0.5s both;
 }
 
-@keyframes move4{
-    0%{
+@keyframes move4 {
+    0% {
         transform: translateX(200%);
     }
 
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
 
 /*/////////////////////home main//////////////////*/
 
-.designer-wrapp{
+.designer-wrapp {
     display: none;
 }
 
 /*//////////////triangle SVG///////////////*/
 
-.triangle-wrapp{
+.triangle-wrapp {
     position: relative;
     height: 45vh;
     background-color: #E9E9E9;
@@ -300,13 +300,13 @@ header{
     z-index: -1;
 }
 
-.triangle{
+.triangle {
     display: block;
     height: 27vh;
     margin: auto;
 }
 
-.cls-2{
+.cls-2 {
     fill: none;
     stroke: #975733;
     stroke-miterlimit: 10;
@@ -314,24 +314,25 @@ header{
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
     animation: draw 1s 1s forwards;
+
 }
 
 
-@keyframes draw{
-    to{
-    stroke-dashoffset: 0;
-        }
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 /*////////////quotes styles/////////*/
-.quotes{
+.quotes {
     position: absolute;
     width: 90%;
     top: 5em;
     left: 2em;
 }
 
-.h1-quote{
+.h1-quote {
     font-size: 5vw;
     text-align: left;
     color: #9E9E9E;
@@ -341,29 +342,29 @@ header{
 }
 
 @keyframes fadeIn {
-    from{
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
 
-h3{
+h3 {
     font-size: 4vw;
     color: #9E9E9E;
     animation: fadeIn 2s 1.5s both;
 }
 
-.h3-quote{
+.h3-quote {
     text-align: left;
     padding-left: 3.5em;
 }
 
 
 
-.special-font{
+.special-font {
     font-size: 1.3em;
     color: #000;
     font-family: 'Marck Script', cursive;
@@ -371,7 +372,7 @@ h3{
 }
 
 /*//////////////////btn to go check my work////////*/
-.job-btn{
+.job-btn {
     font-family: 'Marck Script', cursive;
     font-weight: 500;
     font-size: 1.2em;
@@ -380,34 +381,34 @@ h3{
     padding-top: 2em;
 }
 
-#job-btn a:hover{
+#job-btn a:hover {
     color: #975733;
 }
 
-.fa-chevron-right{
+.fa-chevron-right {
     font-size: 0.6em;
     color: #9E9E9E;
 }
 
-.fa-chevron-right:hover{
+.fa-chevron-right:hover {
 
     color: #975733;
 }
 
-@keyframes jobBtn{
-    from{
+@keyframes jobBtn {
+    from {
         height: 0;
         overflow-y: hidden;
     }
 
-    to{
+    to {
         height: 100%;
     }
 }
 
 
 /*///////////////////////////about page///////////////////////////*/
-.about-main{
+.about-main {
     position: absolute;
     top: 0;
     left: 0;
@@ -428,7 +429,7 @@ h3{
 */
 
 
-.slide{
+.slide {
     position: relative;
     top: 0;
     left: 0;
@@ -439,51 +440,51 @@ h3{
 }
 
 /*/////////////this is the class we add to the last page so it become display none*/
-.not-visible{
+.not-visible {
     display: none;
 }
 
 
-.section{
+.section {
     padding: 0 2em;
     height: 35vh;
     width: 100%;
 }
 
-.cover{
+.cover {
     width: 100%;
     height: 100%;
     animation: show 2s both;
 }
 
-@keyframes show{
-    from{
+@keyframes show {
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
 
 
 
-.profile-pic{
+.profile-pic {
     display: block;
     width: auto;
     height: 75%;
-    margin:0 auto;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
-.about-pic{
-   width: 100%;
+.about-pic {
+    width: 100%;
     height: 75%;
     object-fit: cover;
 
 }
 
-.content{
+.content {
     background-color: #E9E9E9;
     height: 50vh;
     width: 100%;
@@ -493,12 +494,12 @@ h3{
 }
 
 
-@keyframes translate{
-    from{
+@keyframes translate {
+    from {
         transform: translateX(-100%);
     }
 
-    to{
+    to {
         transform: translateX(0);
     }
 }
@@ -542,7 +543,7 @@ h3{
     animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
-.arrow-up{
+.arrow-up {
     transform: rotate(180deg);
     bottom: 1em;
     left: auto;
@@ -560,14 +561,17 @@ with the transform origin I setting the origin of the animation on the top so th
         transform-origin: 0% 0%;
         transform: scale(1, 0);
     }
+
     50% {
         transform-origin: 0% 0%;
         transform: scale(1, 1);
     }
+
     50.1% {
         transform-origin: 0% 100%;
         transform: scale(1, 1);
     }
+
     100% {
         transform-origin: 0% 100%;
         transform: scale(1, 0);
@@ -580,18 +584,18 @@ with the transform origin I setting the origin of the animation on the top so th
 
 /*///////////////////////////circle menu style////////////////////////////*/
 
-.body{
+.body {
     background: #E9E9E9;
 }
 
-.portfolio-main{
+.portfolio-main {
     position: relative;
     height: 85vh;
     width: 100%;
     text-align: center;
 }
 
-.portfolio-sections{
+.portfolio-sections {
     height: 0;
     width: 100%;
     text-align: center;
@@ -600,12 +604,12 @@ with the transform origin I setting the origin of the animation on the top so th
 }
 
 
-#circle-wrapper{
+#circle-wrapper {
     visibility: hidden;
 }
 
 
-.circle-menu{
+.circle-menu {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -614,42 +618,43 @@ with the transform origin I setting the origin of the animation on the top so th
     width: 200px;
 
 }
+
 .menu {
-      width: 50px;
-      height: 50px;
-      background: #E1C5A5;
-      border-radius: 50%;
-      position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #E1C5A5;
+    border-radius: 50%;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    cursor:pointer;
-    }
+    cursor: pointer;
+}
 
-.portfolio-h2{
+.portfolio-h2 {
     padding-top: 10%;
 }
 
-.project-wrapp{
+.project-wrapp {
     padding-bottom: 1em;
     border-bottom: 1px solid #9E9E9E;
     text-align: left;
 }
 
-.project-h3{
+.project-h3 {
     padding-top: 1em;
     padding-left: 10%;
 }
 
-.portfolio-container{
+.portfolio-container {
     width: 80%;
     height: 10em;
     margin: 0.5em auto;
     padding: 0 2em;
 }
 
-.end{
+.end {
     border: none;
 }
 
@@ -657,21 +662,21 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 /* webs section */
-.responsive{
+.responsive {
     background-image: url(../img/medium/responsive-website.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.micro{
+.micro {
     background-image: url(../img/medium/microwebsite.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.prototype{
+.prototype {
     background-image: url(../img/medium/web-prototype.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -680,21 +685,21 @@ with the transform origin I setting the origin of the animation on the top so th
 
 /*UI*/
 
-.basic-prototype{
+.basic-prototype {
     background-image: url(../img/medium/microwebsite.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.story{
+.story {
     background-image: url(../img/medium/story-words.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.storyboard{
+.storyboard {
     background-image: url(../img/medium/story-words.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -702,42 +707,42 @@ with the transform origin I setting the origin of the animation on the top so th
 }
 
 
-.simple-animation{
+.simple-animation {
     background-image: url(../img/medium/simple-animation.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.fly{
+.fly {
     background-image: url(../img/medium/fly.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.bubbles{
+.bubbles {
     background-image: url(../img/medium/bubbles.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.interactive{
+.interactive {
     background-image: url(../img/medium/interactive.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.screen-cast{
+.screen-cast {
     background-image: url(../img/medium/screen-cast.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.nativ{
+.nativ {
     background-image: url(../img/medium/native-app.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -750,41 +755,43 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 /*animation to move the circle btn to the top*/
-.top{
+.top {
     animation: top 2s both;
 }
 
-@keyframes top{
-    from{
+@keyframes top {
+    from {
         top: 50%;
     }
-    to{
+
+    to {
         top: 6em;
     }
 }
 
 
 /*animation to move the circle btn to the center*/
-.center{
+.center {
     animation: center 2s both;
 }
 
-@keyframes center{
-    from{
+@keyframes center {
+    from {
         top: 10%;
     }
-    to{
+
+    to {
         top: 50%;
     }
 }
 
 
 
-.menu:hover{
+.menu:hover {
     background: #553B2E;
 }
 
-.fa-bars{
+.fa-bars {
     position: absolute;
     color: #975733;
     top: 50%;
@@ -796,31 +803,31 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 
-.block{
+.block {
     animation: block 1s both;
 }
 
-@keyframes block{
+@keyframes block {
 
-    to{
+    to {
         visibility: visible;
     }
 }
 
-.move{
+.move {
     animation: move 2s forwards;
 }
 
-.js{
+.js {
     animation: js 1s 1s forwards;
 }
 
 
-.html{
+.html {
     animation: html 1s 1s forwards;
 }
 
-.github{
+.github {
     animation: github 1s 1s forwards;
 }
 
@@ -828,26 +835,27 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 .quarter {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     top: 0;
     right: 0;
     transform-origin: bottom left;
-  background-color: #bb8649;
-  border-radius: 0 100% 0 0;
+    background-color: #bb8649;
+    border-radius: 0 100% 0 0;
 }
+
 .quarter:hover {
-  background-color: #553B2E;
+    background-color: #553B2E;
 }
 
 @keyframes move {
-   from{
+    from {
         height: 0;
         overflow-y: hidden;
     }
 
-    to{
+    to {
         height: 100%;
         overflow-y: visible;
 
@@ -855,35 +863,35 @@ with the transform origin I setting the origin of the animation on the top so th
 }
 
 @keyframes moveB {
-    to{
+    to {
         position: absolute;
         top: 300px;
         left: -1px;
     }
 }
 
-@keyframes js{
-    to{
+@keyframes js {
+    to {
         transform: rotate(270deg);
     }
 
 }
 
-@keyframes html{
-    to{
+@keyframes html {
+    to {
         transform: rotate(180deg);
     }
 
 }
 
-@keyframes github{
-    to{
+@keyframes github {
+    to {
         transform: rotate(90deg);
     }
 
 }
 
-.fa-laptop{
+.fa-laptop {
     color: #975733;
     font-size: 2em;
     position: absolute;
@@ -892,7 +900,7 @@ with the transform origin I setting the origin of the animation on the top so th
     transform: rotate(-270deg);
 }
 
-.fa-laugh-beam{
+.fa-laugh-beam {
     color: #975733;
     font-size: 2em;
     position: absolute;
@@ -901,7 +909,7 @@ with the transform origin I setting the origin of the animation on the top so th
     transform: rotate(-90deg);
 }
 
-.ui{
+.ui {
     color: #975733;
     font-size: 2em;
     position: absolute;
@@ -911,7 +919,7 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 
-.fa-film{
+.fa-film {
     color: #975733;
     font-size: 2em;
     position: absolute;
@@ -922,7 +930,7 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 
-.ux{
+.ux {
     color: #975733;
     font-size: 2em;
     position: absolute;
@@ -937,62 +945,64 @@ with the transform origin I setting the origin of the animation on the top so th
 
 
 
-@media all and (min-width: 768px){
-    h1{
+@media all and (min-width: 768px) {
+    h1 {
         font-size: 2em;
     }
 
-    h2{
+    h2 {
         font-size: 2.2em;
     }
+
     /*////////////////home page//////////*/
 
-    .nav-items{
+    .nav-items {
         font-size: 2.5em;
     }
 
-    .triangle{
+    .triangle {
         height: 30vh;
     }
 
-    .quotes{
+    .quotes {
         top: 8em;
         left: 9em;
     }
 
-    .h1-quote{
+    .h1-quote {
         font-size: 4vw;
     }
 
-    h3{
+    h3 {
         font-size: 3vw;
     }
 
-    .job-btn{
+    .job-btn {
         font-size: 2em;
         padding-top: 1em;
     }
 
 
 
-/*////////////////////////////about page///////////////////////////*/
+    /*////////////////////////////about page///////////////////////////*/
 
-    .content{
+    .content {
         padding: 2em 4em 0 4em;
     }
-    p{
+
+    p {
         font-size: 1.5em;
         text-align: center;
     }
 
 
-/*///////////////////////////portfolio page//////////////////*/
+    /*///////////////////////////portfolio page//////////////////*/
 
-    .portfolio-container{
+    .portfolio-container {
         height: 20em;
     }
 
-    .portfolio-h3{
+    .portfolio-h3 {
         font-size: 2em;
     }
 }
@@ -1001,425 +1011,427 @@ with the transform origin I setting the origin of the animation on the top so th
 
 /*/////////////////////////////////desktop version//////////////////////*/
 
-@media all and (min-width: 1024px){
+@media all and (min-width: 1024px) {
 
 
-/*////////////////////header/////////////////*/
+    /*////////////////////header/////////////////*/
 
 
 
-header{
-    position: fixed;
-    width: 100%;
-    height: 17vh;
-    top: 0;
-    left: 0;
-    padding: 3em 3em 1em 3em;
-}
+    header {
+        position: fixed;
+        width: 100%;
+        height: 17vh;
+        top: 0;
+        left: 0;
+        padding: 3em 3em 1em 3em;
+    }
 
-    .main-header{
+    .main-header {
         position: relative;
     }
 
-.logo{
-    height: 9vh;
-}
+    .logo {
+        height: 9vh;
+    }
 
-    .overlay{
+    .overlay {
         display: none;
     }
 
 
 
-.destock-nav{
-    display: block;
-    position: absolute;
-    top: 3.8em;
-    right: 0;
-    width: auto;
-    overflow-x: hidden;
-    transition: all 1s;
-    opacity: 0;
-    padding-right: 10em;
-    z-index: -1;
-}
+    .destock-nav {
+        display: block;
+        position: absolute;
+        top: 3.8em;
+        right: 0;
+        width: auto;
+        overflow-x: hidden;
+        transition: all 1s;
+        opacity: 0;
+        padding-right: 10em;
+        z-index: -1;
+    }
 
 
-.item-container{
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 0.5em 0.5em 0 1em;
-}
+    .item-container {
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 0.5em 0.5em 0 1em;
+    }
 
-    .item-container a{
+    .item-container a {
         color: #9E9E9E;
     }
 
-    .item-container a:hover{
+    .item-container a:hover {
         color: #975733;
     }
 
 
-.item-container:hover::after{
-    display: block;
-    content: "";
-    margin: auto;
-    height: 0;
-    width: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #975733;
-}
+    .item-container:hover::after {
+        display: block;
+        content: "";
+        margin: auto;
+        height: 0;
+        width: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #975733;
+    }
 
 
-#menu{
-    margin: 1em 2em 1em 1em;
-    height: 1em;
-}
+    #menu {
+        margin: 1em 2em 1em 1em;
+        height: 1em;
+    }
 
-.language{
-    margin: 0.8em 0;
-    height: 1em;
-    font-size: 1.2em;
-}
+    .language {
+        margin: 0.8em 0;
+        height: 1em;
+        font-size: 1.2em;
+    }
 
-/*/////////////////////home main//////////////////*/
+    /*/////////////////////home main//////////////////*/
 
 
-.home-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "background triangle-wrapp";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
+    .home-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "background triangle-wrapp";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
 
-.designer-wrapp{
-    font-size: 0.8em;
-    position: fixed;
-    bottom: 25em;
-    left: -6em;
-    display: block;
-    transform: rotate(-90deg);
-}
+    .designer-wrapp {
+        font-size: 0.8em;
+        position: fixed;
+        bottom: 25em;
+        left: -6em;
+        display: block;
+        transform: rotate(-90deg);
+    }
 
-    .designer-wrapp p{
+    .designer-wrapp p {
         color: #888787;
     }
 
-/*//////////////////////puzzle with picture/////////*/
+    /*//////////////////////puzzle with picture/////////*/
 
 
-.background{
-    padding-top: 17vh;
-    height: 100%;
-    width: 100%;
-}
-
-.background1{
-    width: 100%;
-    height: 100%;
-    animation: move1 3s both;
-}
-
-@keyframes move1{
-    0%{
-        transform: translateY(-150%);
+    .background {
+        padding-top: 17vh;
+        height: 100%;
+        width: 100%;
     }
 
-    100%{
-        transform: translateY(0);
-    }
-}
-
-.background2{
-    width: 100%;
-    height: 100%;
-    animation: move2 3s 0.5s both;
-}
-
-@keyframes move2{
-    0%{
-        transform: translateY(-150%);
+    .background1 {
+        width: 100%;
+        height: 100%;
+        animation: move1 3s both;
     }
 
-    100%{
-        transform: translateY(0);
-    }
-}
+    @keyframes move1 {
+        0% {
+            transform: translateY(-150%);
+        }
 
-.background3{
-    width: 100%;
-    height: 100%;
-    animation: move3 3s both;
-}
-
-@keyframes move3{
-    0%{
-        transform: translateY(150%);
+        100% {
+            transform: translateY(0);
+        }
     }
 
-    100%{
-        transform: translateY(0);
-    }
-}
-
-.background4{
-    width: 100%;
-    height: 100%;
-    animation: move4 3s 0.5s both;
-}
-
-@keyframes move4{
-    0%{
-        transform: translateY(150%);
+    .background2 {
+        width: 100%;
+        height: 100%;
+        animation: move2 3s 0.5s both;
     }
 
-    100%{
-        transform: translateY(0);
+    @keyframes move2 {
+        0% {
+            transform: translateY(-150%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
     }
-}
+
+    .background3 {
+        width: 100%;
+        height: 100%;
+        animation: move3 3s both;
+    }
+
+    @keyframes move3 {
+        0% {
+            transform: translateY(150%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .background4 {
+        width: 100%;
+        height: 100%;
+        animation: move4 3s 0.5s both;
+    }
+
+    @keyframes move4 {
+        0% {
+            transform: translateY(150%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
 
 
 
-/*//////////////triangle SVG///////////////*/
+    /*//////////////triangle SVG///////////////*/
 
-.triangle-wrapp{
-    grid-area: triangle-wrapp;
-    z-index: 2;
-    height: 100%;
-    width: 100%;
-    padding-top: 17vh;
-}
+    .triangle-wrapp {
+        grid-area: triangle-wrapp;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        padding-top: 17vh;
+    }
 
-.triangle{
-    position: relative;
-    height: 22em;
-    width: auto;
-}
+    .triangle {
+        position: relative;
+        height: 22em;
+        width: auto;
+    }
 
-/*////////////quotes styles/////////*/
-.quotes{
-    position: absolute;
-    top: 6em;
-    left: 5em;
-    padding-top: 17vh;
-}
+    /*////////////quotes styles/////////*/
+    .quotes {
+        position: absolute;
+        top: 6em;
+        left: 5em;
+        padding-top: 17vh;
+    }
 
-.h1-quote{
-    font-size: 2em;
-    text-align: left;
-    color: #9E9E9E;
-    margin-bottom: 1em;
-}
+    .h1-quote {
+        font-size: 2em;
+        text-align: left;
+        color: #9E9E9E;
+        margin-bottom: 1em;
+    }
 
-h3{
-    font-size: 1.5em;
-    color: #9E9E9E;
-}
-
-
+    h3 {
+        font-size: 1.5em;
+        color: #9E9E9E;
+    }
 
 
 
-.special-font{
-    font-size: 1.5em;
-    color: #000;
-    font-family: 'Marck Script', cursive;
-}
-
-/*//////////////////btn to go check my work////////*/
-.job-btn{
-    margin-top: 2em;
-    font-family: 'Marck Script', cursive;
-    font-weight: 600;
-    font-size: 2em;
-}
-
-/*//////////////////////footer///////////////////////////*/
-
-.footer-desktop{
-    display: block;
-    position: fixed;
-    bottom: 4em;
-    right: 6em;
-    z-index: 3;
-}
 
 
-.footer-icons{
-    color: #9E9E9E;
-    margin-left: 2em;
-    font-size: 1.5em;
-}
+    .special-font {
+        font-size: 1.5em;
+        color: #000;
+        font-family: 'Marck Script', cursive;
+    }
+
+    /*//////////////////btn to go check my work////////*/
+    .job-btn {
+        margin-top: 2em;
+        font-family: 'Marck Script', cursive;
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    /*//////////////////////footer///////////////////////////*/
+
+    .footer-desktop {
+        display: block;
+        position: fixed;
+        bottom: 4em;
+        right: 6em;
+        z-index: 3;
+    }
 
 
-/*/////////////////////////////about page////////////*/
-    .about-main{
+    .footer-icons {
+        color: #9E9E9E;
+        margin-left: 2em;
+        font-size: 1.5em;
+    }
+
+
+    /*/////////////////////////////about page////////////*/
+    .about-main {
         position: absolute;
         top: 0;
         left: 0;
         padding: 0;
         overflow: hidden;
     }
-    .slide{
+
+    .slide {
         display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "section content";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "section content";
         height: 100vh;
         padding: 0;
 
     }
 
-    .section{
+    .section {
         grid-area: section;
         height: 100vh;
         width: 100%;
         padding: 17vh;
     }
 
-    .profile-pic{
+    .profile-pic {
         width: 90%;
     }
 
-    .content{
+    .content {
         grid-area: content;
-         height: 100vh;
+        height: 100vh;
         width: 100%;
         padding: 17vh;
     }
 
-    @keyframes translate{
-    from{
-        transform: translateX(100%);
+    @keyframes translate {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
     }
 
-    to{
-        transform: translateX(0);
-    }
-}
 
-
-    .arrow-down{
+    .arrow-down {
         left: 50.35%;
     }
 
-    .arrow-up{
-    transform: rotate(180deg);
-    bottom: 4em;
-    left: auto;
-    right: 49.7%;
-}
+    .arrow-up {
+        transform: rotate(180deg);
+        bottom: 4em;
+        left: auto;
+        right: 49.7%;
+    }
 
-    .not-visible{
+    .not-visible {
         display: none
     }
 
 
 
-/*/////////////////////////portfolio page////////////////*/
+    /*/////////////////////////portfolio page////////////////*/
 
-    .project-wrapp{
+    .project-wrapp {
         border: none;
     }
 
-    .portfolio-container{
+    .portfolio-container {
         height: 12em;
     }
-    .portfolio-section1{
-         display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas:
-        "portfolio-h2 portfolio-h2 portfolio-h2"
-        "wrapp1 wrapp2 wrapp3";
+
+    .portfolio-section1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "portfolio-h2 portfolio-h2 portfolio-h2"
+            "wrapp1 wrapp2 wrapp3";
         padding: 0 4em;
     }
 
 
     .portfolio-h2 {
-        grid-area:  portfolio-h2;
+        grid-area: portfolio-h2;
         padding-top: 2em;
     }
 
-    .wrapp1{
+    .wrapp1 {
         grid-area: wrapp1;
     }
 
-    .wrapp2{
+    .wrapp2 {
         grid-area: wrapp2;
     }
 
-    .wrapp3{
+    .wrapp3 {
         grid-area: wrapp3;
     }
 
 
 
 
-    .portfolio-section2{
-         display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas:
-        "portfolio-h2 portfolio-h2 portfolio-h2"
-        "wrapp1 wrapp2 wrapp3";
+    .portfolio-section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "portfolio-h2 portfolio-h2 portfolio-h2"
+            "wrapp1 wrapp2 wrapp3";
         padding: 0 4em;
     }
 
 
 
-    .portfolio-section3{
-         display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 0.5;
-    grid-template-rows: 0.1fr 1fr;
-    grid-template-areas:
-        "portfolio-h2 portfolio-h2 portfolio-h2 portfolio-h2"
-        ". wrapp1 wrapp2 .";
+    .portfolio-section3 {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas:
+            "portfolio-h2 portfolio-h2 portfolio-h2 portfolio-h2"
+            ". wrapp1 wrapp2 .";
         padding: 0 4em;
     }
 
-   .portfolio-section4{
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 1fr;
-    grid-template-areas:
-        "portfolio-h2 portfolio-h2 portfolio-h2"
-        "last1 last2 last3"
-        "last4 last5 .";
+    .portfolio-section4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-areas:
+            "portfolio-h2 portfolio-h2 portfolio-h2"
+            "last1 last2 last3"
+            "last4 last5 .";
         padding: 0 4em;
     }
 
 
-    .last1{
+    .last1 {
         grid-area: last1;
         padding: 4em 0;
     }
 
-    .last2{
+    .last2 {
         grid-area: last2;
         padding: 4em 0;
     }
 
-    .last3{
+    .last3 {
         grid-area: last3;
         padding: 4em 0;
     }
 
-    .last4{
+    .last4 {
         grid-area: last4;
         padding: 4em 0;
     }
 
-    .last5{
+    .last5 {
         grid-area: last5;
         padding: 4em 0;
     }
